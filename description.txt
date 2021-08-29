@@ -1,0 +1,13 @@
+BINARY SEARCH
+
+------------------------------------------------------------------------------------------------------
+
+Étant donné un tableau A UNE de n méléments avec des valeurs ou des enregistrements {\displaystyle A_{0},A_{1},A_{2},\ldots ,A_{n-1}}{\displaystyle A_{0},A_{1},A_{2},\ldots ,A_{n-1}}trié de telle sorte que {\displaystyle A_{0}\leq A_{1}\leq A_{2}\leq \cdots \leq A_{n-1}}{\displaystyle A_{0}\leq A_{1}\leq A_{2}\leq \cdots \leq A_{n-1}}, et valeur cible {\style d'affichage T}T, le sous-programme suivant utilise la recherche binaire pour trouver l'index de{\style d'affichage T}T dans {\style d'affichage A}UNE. [7]
+
+Régler {\style d'affichage L}L à {\style d'affichage 0} 0 et {\style d'affichage R}R à {\style d'affichage n-1}n-1.
+Si {\style d'affichage G>R}{\style d'affichage G>R}, la recherche se termine comme un échec.
+Régler {\style d'affichage m}m(la position de l'élément central) au sol de{\style d'affichage {\frac {L+R}{2}}}{\style d'affichage {\frac {L+R}{2}}}, qui est le plus grand entier inférieur ou égal à {\style d'affichage {\frac {L+R}{2}}}{\style d'affichage {\frac {L+R}{2}}}.
+Si {\style d'affichage A_{m}<T}{\style d'affichage A_{m}<T}, ensemble {\style d'affichage L}L à {\style d'affichage m+1}m+1 et passez à l'étape 2.
+Si {\style d'affichage A_{m}>T}{\style d'affichage A_{m}>T}, ensemble {\style d'affichage R}R à {\style d'affichage m-1}m-1 et passez à l'étape 2.
+Maintenant {\style d'affichage A_{m}=T}{\style d'affichage A_{m}=T}, la recherche est terminée ; revenir{\style d'affichage m}m.
+Cette procédure itérative garde une trace des limites de la recherche avec les deux variables {\style d'affichage L}L et {\style d'affichage R}R. La procédure peut être exprimée en pseudo-code comme suit, où les noms et types de variables restent les mêmes que ci-dessus, floorest la fonction étage, et unsuccessfulfait référence à une valeur spécifique qui traduit l'échec de la recherche.
