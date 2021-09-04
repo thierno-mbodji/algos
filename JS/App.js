@@ -64,7 +64,7 @@ function LastOccurenccy(A,n,x){
     return result;
 }
 
-let Tab = [2,6,13,21,36,47,63,81,97];
+/* let Tab = [2,6,13,21,36,47,63,81,97];
 let tab2 = [2,4,10,10,10,18,20];
 let s = 21;
 let t = 10;
@@ -81,4 +81,4 @@ if(test2 === -1){
          if(test1 === -1)
              console.log("le nombre n'est pas trouvé");
             else 
-             console.log("good job");
+             console.log("good job"); */
