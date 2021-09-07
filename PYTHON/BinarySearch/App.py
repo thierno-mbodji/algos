@@ -1,4 +1,7 @@
-print("hello world");
+import time
+import module
+print("hello world"); 
+
 #fonction f(x) = x^2 lambda fonction de type Matho
 f = lambda x: x**2;
 
@@ -30,8 +33,39 @@ traduction = {
     "oiseau": "bird",
     "souris": "mouse"
 }
+#----------------------------------------------
+debut = time.time()
+
+liste_1 = []
+
+for i in range(10000000):
+    liste_1.append(i**2)
+    
+
+fin = time.time()
+print(fin - debut)
+
+#----------------------------List comprehension------------------------------
+
+debut = time.time()
+
+liste_2 = [i**2 for i in range(10000000)]
 
     
+fin = time.time()
+print(fin - debut)
+#---------------dictionnaire comprehension--------------------------------
+
+prenoms = ['thierno','ibrahima','fallou','saliou','anta']
+dico_comprehension = {k:v for k, v in enumerate(prenoms) }
+print(dico_comprehension)
+ages = [24,35,31,78,65]
+dico_2 = {prenom:age for prenom, age in zip(prenoms, ages) if age > 30}
+print(dico_2)
+
+#-------------------------------Module et package--------------------------
+test_module = module.fibo(12)
+
             
         
     
